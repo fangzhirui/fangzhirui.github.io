@@ -3,8 +3,8 @@
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <title>Best Wish</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />     
 <link rel="stylesheet" href="./bs/jquery.percentageloader-0.2.css">
-    
 <script src="./bs/easeljs-0.8.1.min.js"></script>
 <script src="./bs/jquery-1.11.3.min.js"></script>
 <script src="./bs/jquery.percentageloader-0.2.js"></script>
@@ -21,12 +21,12 @@ body {
 }
 
 #container {
-    margin-top: 80px;
+    margin-top: 5em;
 }
 
 .hint {
-    margin-top: 50px;
-    font-size: 30px;
+    margin-top: 3em;
+    font-size: 2em;
     font-family: cursive;
     color: rgb(128, 169, 200);
 }
@@ -42,7 +42,7 @@ body {
 
 <div>
     <center>
-        <div id="container"><div style="width: 256px; height: 256px; position: relative;"><canvas width="256" height="256"></canvas><div style="width: 254px; text-align: center; height: 50px; left: 0px; position: absolute; -webkit-user-select: none; top: 96.25px; color: rgb(128, 169, 200); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 63.5px; line-height: normal; font-family: BebasNeueRegular; text-shadow: rgb(255, 255, 255) 0px 1px 1px;">93%</div><div style="width: 254px; text-align: center; height: 23.0909px; overflow: hidden; left: 0px; position: absolute; -webkit-user-select: none; color: rgb(128, 169, 200); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 23.0909px; line-height: normal; font-family: BebasNeueRegular; text-shadow: none; top: 218.227px;">194s</div></div></div>
+        <div id="container"><div style="width: 256px; height: 256px; position: relative;"><canvas width="256" height="256"></canvas><div style="width: 254px; text-align: center; height: 50px; left: 0px; position: absolute; -webkit-user-select: none; top: 96.25px; color: rgb(128, 169, 200); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 63.5px; line-height: normal; font-family: BebasNeueRegular; text-shadow: rgb(255, 255, 255) 0px 1px 1px;">93%</div><div style="width: 254px; text-align: center; height: 23.0909px; overflow: hidden; left: 0px; position: absolute; -webkit-user-select: none; color: rgb(128, 169, 200); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 1.5em; line-height: normal; font-family: BebasNeueRegular; text-shadow: none; top: 218.227px;">194s</div></div></div>
         <div id="hint" class="hint">Please Press F11 to watch in Full Screen Mode.</div>
         <div id="hint2" class="hint">Press Enter to continue ...</div>
         <canvas id="testCanvas" style="background:#312;" width="0px" height="0px"></canvas>
@@ -159,7 +159,7 @@ function drawMain(){
             return "rgb(" + parseInt(r) + ", " + parseInt(g) + ", " + parseInt(b) + ")";
         }
     })();
-    var text = new createjs.Text("Wish you would be happy every day!\n\n                             -- To Dear 66", "bold 48px Cursive", getColor());
+    var text = new createjs.Text("Wish you would be happy every day!\n\n                             -- To Dear 66", "bold 3em Cursive", getColor());
     text.textAlign = "center";
     text.x = w / 2;
     text.y = h / 2 - text.getMeasuredLineHeight();
@@ -171,13 +171,13 @@ function drawMain(){
         var counter = 0;
         return function(){
             counter ++;
-            if(counter % 20 == 0){
+            if(counter % 20 === 0){
                 counter = 0;
                 return true;
             } else {
                 return false;
             }
-        }
+        };
     })();
     
     for (i = 0; i < 100; i++) {
