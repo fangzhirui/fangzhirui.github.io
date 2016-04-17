@@ -259,7 +259,7 @@ $(function(){
                 $(".hint").hide(400);
                 $("#container").hide(1000, drawMain);
             }
-        }).click((function(){
+        }).bind('touchstart', (function(){
           var exe = false;
           return function(){
             if(!exe){
