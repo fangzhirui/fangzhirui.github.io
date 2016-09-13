@@ -6,43 +6,31 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <title>train_tickets | My Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="瞄准某一趟车次，有票会给某邮箱发邮件
+  <meta name="description" content="瞄准某一趟车次，有票的话会用自己的Gmail给自己的工作邮箱发邮件
 每30s调用一次余票网的第三方api, 检查想要的车次是否有票。
 为啥不用微信呢，因为并木有天朝有网银的银行卡
 另外需要设置Google的低安全性应用程式
 
-dependency‘’’
-npm install nodemailer –save;npm install superagent –save;
-node index.js;
-‘’’
-index.js‘’">
+dependency12345npm install nodemailer --save;npm install superagent --save;node index.j">
 <meta property="og:type" content="article">
 <meta property="og:title" content="train_tickets">
 <meta property="og:url" content="http://yoursite.com/2016/06/17/train-tickets/index.html">
 <meta property="og:site_name" content="My Blog">
-<meta property="og:description" content="瞄准某一趟车次，有票会给某邮箱发邮件
+<meta property="og:description" content="瞄准某一趟车次，有票的话会用自己的Gmail给自己的工作邮箱发邮件
 每30s调用一次余票网的第三方api, 检查想要的车次是否有票。
 为啥不用微信呢，因为并木有天朝有网银的银行卡
 另外需要设置Google的低安全性应用程式
 
-dependency‘’’
-npm install nodemailer –save;npm install superagent –save;
-node index.js;
-‘’’
-index.js‘’">
-<meta property="og:updated_time" content="2016-09-13T14:25:08.000Z">
+dependency12345npm install nodemailer --save;npm install superagent --save;node index.j">
+<meta property="og:updated_time" content="2016-09-13T15:07:42.869Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="train_tickets">
-<meta name="twitter:description" content="瞄准某一趟车次，有票会给某邮箱发邮件
+<meta name="twitter:description" content="瞄准某一趟车次，有票的话会用自己的Gmail给自己的工作邮箱发邮件
 每30s调用一次余票网的第三方api, 检查想要的车次是否有票。
 为啥不用微信呢，因为并木有天朝有网银的银行卡
 另外需要设置Google的低安全性应用程式
 
-dependency‘’’
-npm install nodemailer –save;npm install superagent –save;
-node index.js;
-‘’’
-index.js‘’">
+dependency12345npm install nodemailer --save;npm install superagent --save;node index.j">
   
     <link rel="alternative" href="/atom.xml" title="My Blog" type="application/atom+xml">
   
@@ -265,74 +253,13 @@ index.js‘’">
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="瞄准某一趟车次，有票会给某邮箱发邮件"><a href="#瞄准某一趟车次，有票会给某邮箱发邮件" class="headerlink" title="瞄准某一趟车次，有票会给某邮箱发邮件"></a>瞄准某一趟车次，有票会给某邮箱发邮件</h3><ul>
+        <h3 id="瞄准某一趟车次，有票的话会用自己的Gmail给自己的工作邮箱发邮件"><a href="#瞄准某一趟车次，有票的话会用自己的Gmail给自己的工作邮箱发邮件" class="headerlink" title="瞄准某一趟车次，有票的话会用自己的Gmail给自己的工作邮箱发邮件"></a>瞄准某一趟车次，有票的话会用自己的Gmail给自己的工作邮箱发邮件</h3><ul>
 <li>每30s调用一次<a href="&#39;http://yupiao.info/&#39;">余票网</a>的第三方api, 检查想要的车次是否有票。</li>
 <li>为啥不用微信呢，因为并木有天朝有网银的银行卡</li>
 <li>另外需要设置Google的<a href="&#39;https://www.google.com/settings/security/lesssecureapps&#39;">低安全性应用程式</a></li>
 </ul>
-<h5 id="dependency"><a href="#dependency" class="headerlink" title="dependency"></a>dependency</h5><p>‘’’</p>
-<p>npm install nodemailer –save;<br>npm install superagent –save;</p>
-<p>node index.js;</p>
-<p>‘’’</p>
-<h5 id="index-js"><a href="#index-js" class="headerlink" title="index.js"></a>index.js</h5><p>‘’’</p>
-<p>var nodemailer = require(‘nodemailer’);<br>var superagent = require(‘superagent’);</p>
-<p>var sendEmail = function(content){</p>
-<pre><code>//HERE WRITE THE PASSWORD
-var transporter = nodemailer.createTransport(&apos;smtps://{EMAIL_ADDRESS|URLENCODED}:{EMAIL_PASSWORD}@smtp.gmail.com&apos;);
-var mailOptions = {
-    from: &apos;{EMAIL_ADDRESS}&apos;, // sender address fangzhirui@gmail.com
-    to: &apos;{EMAIL_ADDRESS01},{EMAIL_ADDRESS02}&apos;, // list of receivers
-    //to: &apos;fangzhirui@sina.com&apos;, // list of receivers
-    subject: content, // Subject line == title
-    text: content, // plaintext body
-    html: content // html body
-};
-
-transporter.sendMail(mailOptions, function(error, info){
-    if(error){
-        return console.log(error);
-    }
-    console.log(&apos;Message sent: &apos; + info.response);
-});
-</code></pre><p>};</p>
-<p>setInterval(function(){</p>
-<pre><code>superagent.get(&apos;http://yupiao.info/api/yp/%E6%BC%A0%E6%B2%B3-%E5%93%88%E5%B0%94%E6%BB%A8-K7040/2016-06-22&apos;)
-    .end(function (err, sres) {
-        if(err){
-            console.log(err);
-        } else {
-            sres = sres || &apos;&apos;;
-            var text = sres.text.trim();
-            if(text.slice(0, 1) == &apos;{&apos; || text.charAt(0) == &apos;[&apos;){
-                var arr = JSON.parse(text).data.split(&apos;,&apos;);
-                if(arr[8] != &apos;无&apos;){
-                    sendEmail(&apos;22号K4070漠河到哈尔滨硬卧&apos; + arr[8] + &apos;张票&apos;);
-                } else if (arr[9] != &apos;无&apos;){
-                    sendEmail(&apos;22号K4070漠河到哈尔滨软卧&apos; + arr[8] + &apos;张票&apos;);
-                }
-            }
-        }
-    });
-
-superagent.get(&apos;http://yupiao.info/api/yp/%E6%BC%A0%E6%B2%B3-%E5%93%88%E5%B0%94%E6%BB%A8-k7042/2016-06-22&apos;)
-    .end(function (err, sres) {
-        if(err){
-            console.log(err);
-        } else {
-            sres = sres || &apos;&apos;;            
-            var text = sres.text.trim();
-            if(text.slice(0, 1) == &apos;{&apos; || text.charAt(0) == &apos;[&apos;){
-                var arr = JSON.parse(text).data.split(&apos;,&apos;);
-                if(arr[8] != &apos;无&apos;){
-                    sendEmail(&apos;22号K4072漠河到哈尔滨硬卧: &apos; + arr[8] + &apos;张票&apos;);
-                } else if (arr[9] != &apos;无&apos;){
-                    sendEmail(&apos;22号K4072漠河到哈尔滨软卧: &apos; + arr[9] + &apos;张票&apos;);
-                }
-            }
-        }
-    });
-</code></pre><p>}, 30000);</p>
-<p>‘’’</p>
+<h5 id="dependency"><a href="#dependency" class="headerlink" title="dependency"></a>dependency</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">npm install nodemailer --save;</span><br><span class="line">npm install superagent --save;</span><br><span class="line"></span><br><span class="line">node index.js;</span><br></pre></td></tr></table></figure>
+<h5 id="index-js"><a href="#index-js" class="headerlink" title="index.js"></a>index.js</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">var</span> nodemailer = <span class="built_in">require</span>(<span class="string">'nodemailer'</span>);</span><br><span class="line"><span class="keyword">var</span> superagent = <span class="built_in">require</span>(<span class="string">'superagent'</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> sendEmail = <span class="function"><span class="keyword">function</span>(<span class="params">content</span>)</span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="comment">//HERE WRITE THE PASSWORD</span></span><br><span class="line">	<span class="keyword">var</span> transporter = nodemailer.createTransport(<span class="string">'smtps://&#123;EMAIL_ADDRESS|URLENCODED&#125;:&#123;EMAIL_PASSWORD&#125;@smtp.gmail.com'</span>);</span><br><span class="line">	<span class="keyword">var</span> mailOptions = &#123;</span><br><span class="line">		from: <span class="string">'&#123;EMAIL_ADDRESS&#125;'</span>, <span class="comment">// sender address fangzhirui@gmail.com</span></span><br><span class="line">		to: <span class="string">'&#123;EMAIL_ADDRESS01&#125;,&#123;EMAIL_ADDRESS02&#125;'</span>, <span class="comment">// list of receivers</span></span><br><span class="line">		<span class="comment">//to: 'fangzhirui@sina.com', // list of receivers</span></span><br><span class="line">		subject: content, <span class="comment">// Subject line == title</span></span><br><span class="line">		text: content, <span class="comment">// plaintext body</span></span><br><span class="line">		html: content <span class="comment">// html body</span></span><br><span class="line">	&#125;;</span><br><span class="line"></span><br><span class="line">	transporter.sendMail(mailOptions, <span class="function"><span class="keyword">function</span>(<span class="params">error, info</span>)</span>&#123;</span><br><span class="line">		<span class="keyword">if</span>(error)&#123;</span><br><span class="line">			<span class="keyword">return</span> <span class="built_in">console</span>.log(error);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="built_in">console</span>.log(<span class="string">'Message sent: '</span> + info.response);</span><br><span class="line">	&#125;);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">setInterval(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line"></span><br><span class="line">	superagent.get(<span class="string">'http://yupiao.info/api/yp/%E6%BC%A0%E6%B2%B3-%E5%93%88%E5%B0%94%E6%BB%A8-K7040/2016-06-22'</span>)</span><br><span class="line">		.end(<span class="function"><span class="keyword">function</span> (<span class="params">err, sres</span>) </span>&#123;</span><br><span class="line">			<span class="keyword">if</span>(err)&#123;</span><br><span class="line">				<span class="built_in">console</span>.log(err);</span><br><span class="line">			&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">				sres = sres || <span class="string">''</span>;</span><br><span class="line">				<span class="keyword">var</span> text = sres.text.trim();</span><br><span class="line">				<span class="keyword">if</span>(text.slice(<span class="number">0</span>, <span class="number">1</span>) == <span class="string">'&#123;'</span> || text.charAt(<span class="number">0</span>) == <span class="string">'['</span>)&#123;</span><br><span class="line">					<span class="keyword">var</span> arr = <span class="built_in">JSON</span>.parse(text).data.split(<span class="string">','</span>);</span><br><span class="line">					<span class="keyword">if</span>(arr[<span class="number">8</span>] != <span class="string">'无'</span>)&#123;</span><br><span class="line">						sendEmail(<span class="string">'22号K4070漠河到哈尔滨硬卧'</span> + arr[<span class="number">8</span>] + <span class="string">'张票'</span>);</span><br><span class="line">					&#125; <span class="keyword">else</span> <span class="keyword">if</span> (arr[<span class="number">9</span>] != <span class="string">'无'</span>)&#123;</span><br><span class="line">						sendEmail(<span class="string">'22号K4070漠河到哈尔滨软卧'</span> + arr[<span class="number">8</span>] + <span class="string">'张票'</span>);</span><br><span class="line">					&#125;</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;);</span><br><span class="line"></span><br><span class="line">	superagent.get(<span class="string">'http://yupiao.info/api/yp/%E6%BC%A0%E6%B2%B3-%E5%93%88%E5%B0%94%E6%BB%A8-k7042/2016-06-22'</span>)</span><br><span class="line">		.end(<span class="function"><span class="keyword">function</span> (<span class="params">err, sres</span>) </span>&#123;</span><br><span class="line">			<span class="keyword">if</span>(err)&#123;</span><br><span class="line">				<span class="built_in">console</span>.log(err);</span><br><span class="line">			&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">				sres = sres || <span class="string">''</span>;</span><br><span class="line">				<span class="keyword">var</span> text = sres.text.trim();</span><br><span class="line">				<span class="keyword">if</span>(text.slice(<span class="number">0</span>, <span class="number">1</span>) == <span class="string">'&#123;'</span> || text.charAt(<span class="number">0</span>) == <span class="string">'['</span>)&#123;</span><br><span class="line">					<span class="keyword">var</span> arr = <span class="built_in">JSON</span>.parse(text).data.split(<span class="string">','</span>);</span><br><span class="line">					<span class="keyword">if</span>(arr[<span class="number">8</span>] != <span class="string">'无'</span>)&#123;</span><br><span class="line">						sendEmail(<span class="string">'22号K4072漠河到哈尔滨硬卧: '</span> + arr[<span class="number">8</span>] + <span class="string">'张票'</span>);</span><br><span class="line">					&#125; <span class="keyword">else</span> <span class="keyword">if</span> (arr[<span class="number">9</span>] != <span class="string">'无'</span>)&#123;</span><br><span class="line">						sendEmail(<span class="string">'22号K4072漠河到哈尔滨软卧: '</span> + arr[<span class="number">9</span>] + <span class="string">'张票'</span>);</span><br><span class="line">					&#125;</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;);</span><br><span class="line">&#125;, <span class="number">30000</span>);</span><br></pre></td></tr></table></figure>
 
       
     </div>
