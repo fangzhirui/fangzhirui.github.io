@@ -6,16 +6,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <title>正则式匹配EXIF字符串 | My Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="js正则式切割带有关键字的字符串1&amp;#60;script   src=&amp;#34;https://code.jquery.com/jquery-1.12.3.js&amp;#34;   integrity=&amp;#34;sha256-1XMpEtA4eKXNNpXcJ1pmMPs8JV+nwLdEqwiJeCQEkyc=&amp;#34;   crossorigin=&amp;#34;anonymous&amp;#34;&amp;#62;&amp;#">
+  <meta name="description" content="js正则式切割带有关键字的字符串本例就是把一个长串根据’Make’, ‘Model’,’F-Number’ … …切割开1&amp;#60;script   src=&amp;#34;https://code.jquery.com/jquery-1.12.3.js&amp;#34;   integrity=&amp;#34;sha256-1XMpEtA4eKXNNpXcJ1pmMPs8JV+nwLdEqwiJeCQEkyc=&amp;#">
 <meta property="og:type" content="article">
 <meta property="og:title" content="正则式匹配EXIF字符串">
 <meta property="og:url" content="http://yoursite.com/2016/04/19/regex01/index.html">
 <meta property="og:site_name" content="My Blog">
-<meta property="og:description" content="js正则式切割带有关键字的字符串1&amp;#60;script   src=&amp;#34;https://code.jquery.com/jquery-1.12.3.js&amp;#34;   integrity=&amp;#34;sha256-1XMpEtA4eKXNNpXcJ1pmMPs8JV+nwLdEqwiJeCQEkyc=&amp;#34;   crossorigin=&amp;#34;anonymous&amp;#34;&amp;#62;&amp;#">
-<meta property="og:updated_time" content="2016-04-19T15:27:40.000Z">
+<meta property="og:description" content="js正则式切割带有关键字的字符串本例就是把一个长串根据’Make’, ‘Model’,’F-Number’ … …切割开1&amp;#60;script   src=&amp;#34;https://code.jquery.com/jquery-1.12.3.js&amp;#34;   integrity=&amp;#34;sha256-1XMpEtA4eKXNNpXcJ1pmMPs8JV+nwLdEqwiJeCQEkyc=&amp;#">
+<meta property="og:updated_time" content="2016-09-13T15:33:18.674Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="正则式匹配EXIF字符串">
-<meta name="twitter:description" content="js正则式切割带有关键字的字符串1&amp;#60;script   src=&amp;#34;https://code.jquery.com/jquery-1.12.3.js&amp;#34;   integrity=&amp;#34;sha256-1XMpEtA4eKXNNpXcJ1pmMPs8JV+nwLdEqwiJeCQEkyc=&amp;#34;   crossorigin=&amp;#34;anonymous&amp;#34;&amp;#62;&amp;#">
+<meta name="twitter:description" content="js正则式切割带有关键字的字符串本例就是把一个长串根据’Make’, ‘Model’,’F-Number’ … …切割开1&amp;#60;script   src=&amp;#34;https://code.jquery.com/jquery-1.12.3.js&amp;#34;   integrity=&amp;#34;sha256-1XMpEtA4eKXNNpXcJ1pmMPs8JV+nwLdEqwiJeCQEkyc=&amp;#">
   
     <link rel="alternative" href="/atom.xml" title="My Blog" type="application/atom+xml">
   
@@ -117,7 +117,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/node-js/" style="font-size: 10px;">node.js</a>
+						<a href="/tags/front/" style="font-size: 20px;">front</a> <a href="/tags/node-js/" style="font-size: 10px;">node.js</a>
 					</div>
 				</section>
 				
@@ -226,6 +226,10 @@
       
       <div class="article-info article-info-post">
         
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/front/">front</a></li></ul>
+	</div>
+
         
 
         <div class="clearfix"></div>
@@ -234,7 +238,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h4 id="js正则式切割带有关键字的字符串"><a href="#js正则式切割带有关键字的字符串" class="headerlink" title="js正则式切割带有关键字的字符串"></a>js正则式切割带有关键字的字符串</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#60;script   src=&#34;https://code.jquery.com/jquery-1.12.3.js&#34;   integrity=&#34;sha256-1XMpEtA4eKXNNpXcJ1pmMPs8JV+nwLdEqwiJeCQEkyc=&#34;   crossorigin=&#34;anonymous&#34;&#62;&#60;/script&#62;&#10;&#10;&#60;script&#62;&#10;(function(window, $) &#123;&#10;  var reg = (function() &#123;&#10;    var keywords = [&#10;      &#39;Make&#39;,&#10;      &#39;Model&#39;,&#10;      &#39;Date Time Original&#39;,&#10;      &#39;Date Time Digitized&#39;,&#10;      &#39;Exif Image Width&#39;,&#10;      &#39;Exif Image Height&#39;,&#10;      &#39;Exposure Time&#39;,&#10;      &#39;Shutter Speed Value&#39;,&#10;      &#39;F-Number&#39;,&#10;      &#39;Aperture Value&#39;,&#10;      &#39;Focal Length&#39;,&#10;      &#39;ISO Speed Ratings&#39;,&#10;      &#39;Flash&#39;,&#10;      &#39;Exposure Bias Value&#39;,&#10;      &#39;Exposure Program&#39;,&#10;      &#39;Exposure Mode&#39;,&#10;      &#39;White Balance&#39;,&#10;      &#39;Metering Mode&#39;,&#10;      &#39;Max Aperture Value&#39;,&#10;      &#39;Colorspace&#39;,&#10;      &#39;Components Configuration&#39;,&#10;      &#39;Exif Version&#39;&#10;    ];&#10;    var keys = keywords.join(&#39;|&#39;);&#10;    var regStr = &#39;((&#39; + keys + &#39;)&#39; + &#39;=(.*?\\s+(?=&#39; + &#39;(&#39; + keys + &#39;)&#39; + &#39;))|.*$)?&#39;;&#10;    return new RegExp(regStr, &#39;g&#39;);&#10;  &#125;)();&#10;&#10;  window.HKTE = window.HKTE || &#123;&#125;;&#10;  window.HKTE.parseExif = function(str)&#123;&#10;    var obj = &#123;&#125;;&#10;    if(str &#38;&#38; str.length)&#123;&#10;      var arr = $.grep(str.match(reg), function(element)&#123;&#10;        return element &#38;&#38; element.length;&#10;      &#125;);&#10;      $.each(arr, function(index, element)&#123;&#10;        var i = element.indexOf(&#39;=&#39;);&#10;        obj[element.slice(0, i)] = (element.slice(i+1) || &#39;&#39;).trim();&#10;      &#125;);&#10;    &#125;&#10;    return obj;&#10;  &#125;;&#10;&#125;)(window, jQuery);&#10;&#10;var t = &#39;Make=Canon Model=Canon EOS 5D Mark II Date Time Original=2016:04:01 10:34:02 Date Time Digitized=2016:04:01 10:34:02 Exif Image Width=5616 pixels Exif Image Height=3744 pixels Exposure Time=1/160 sec Shutter Speed Value=0.006 sec F-Number=f/5.0 Aperture Value=f/5.0 Focal Length=102.0mm ISO Speed Ratings=2000 Flash=Flash did not fire, compulsory flash mode. Exposure Bias Value=0.0EV Exposure Program=Manual Exposure Mode=Manual White Balance=Manual Metering Mode=Pattern Max Aperture Value=f/2.7 Colorspace=reserved Components Configuration=YCbCr Exif Version=2.21&#39;;&#10;&#10;window.HKTE.parseExif(t);&#10;&#60;/script&#62;</span><br></pre></td></tr></table></figure>
+        <h4 id="js正则式切割带有关键字的字符串"><a href="#js正则式切割带有关键字的字符串" class="headerlink" title="js正则式切割带有关键字的字符串"></a>js正则式切割带有关键字的字符串</h4><h4 id="本例就是把一个长串根据’Make’-‘Model’-’F-Number’-…-…切割开"><a href="#本例就是把一个长串根据’Make’-‘Model’-’F-Number’-…-…切割开" class="headerlink" title="本例就是把一个长串根据’Make’, ‘Model’,’F-Number’ … …切割开"></a>本例就是把一个长串根据’Make’, ‘Model’,’F-Number’ … …切割开</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#60;script   src=&#34;https://code.jquery.com/jquery-1.12.3.js&#34;   integrity=&#34;sha256-1XMpEtA4eKXNNpXcJ1pmMPs8JV+nwLdEqwiJeCQEkyc=&#34;   crossorigin=&#34;anonymous&#34;&#62;&#60;/script&#62;&#10;&#10;&#60;script&#62;&#10;(function(window, $) &#123;&#10;  var reg = (function() &#123;&#10;    var keywords = [&#10;      &#39;Make&#39;,&#10;      &#39;Model&#39;,&#10;      &#39;Date Time Original&#39;,&#10;      &#39;Date Time Digitized&#39;,&#10;      &#39;Exif Image Width&#39;,&#10;      &#39;Exif Image Height&#39;,&#10;      &#39;Exposure Time&#39;,&#10;      &#39;Shutter Speed Value&#39;,&#10;      &#39;F-Number&#39;,&#10;      &#39;Aperture Value&#39;,&#10;      &#39;Focal Length&#39;,&#10;      &#39;ISO Speed Ratings&#39;,&#10;      &#39;Flash&#39;,&#10;      &#39;Exposure Bias Value&#39;,&#10;      &#39;Exposure Program&#39;,&#10;      &#39;Exposure Mode&#39;,&#10;      &#39;White Balance&#39;,&#10;      &#39;Metering Mode&#39;,&#10;      &#39;Max Aperture Value&#39;,&#10;      &#39;Colorspace&#39;,&#10;      &#39;Components Configuration&#39;,&#10;      &#39;Exif Version&#39;&#10;    ];&#10;    var keys = keywords.join(&#39;|&#39;);&#10;    var regStr = &#39;((&#39; + keys + &#39;)&#39; + &#39;=(.*?\\s+(?=&#39; + &#39;(&#39; + keys + &#39;)&#39; + &#39;))|.*$)?&#39;;&#10;    return new RegExp(regStr, &#39;g&#39;);&#10;  &#125;)();&#10;&#10;  window.HKTE = window.HKTE || &#123;&#125;;&#10;  window.HKTE.parseExif = function(str)&#123;&#10;    var obj = &#123;&#125;;&#10;    if(str &#38;&#38; str.length)&#123;&#10;      var arr = $.grep(str.match(reg), function(element)&#123;&#10;        return element &#38;&#38; element.length;&#10;      &#125;);&#10;      $.each(arr, function(index, element)&#123;&#10;        var i = element.indexOf(&#39;=&#39;);&#10;        obj[element.slice(0, i)] = (element.slice(i+1) || &#39;&#39;).trim();&#10;      &#125;);&#10;    &#125;&#10;    return obj;&#10;  &#125;;&#10;&#125;)(window, jQuery);&#10;&#10;var t = &#39;Make=Canon Model=Canon EOS 5D Mark II Date Time Original=2016:04:01 10:34:02 Date Time Digitized=2016:04:01 10:34:02 Exif Image Width=5616 pixels Exif Image Height=3744 pixels Exposure Time=1/160 sec Shutter Speed Value=0.006 sec F-Number=f/5.0 Aperture Value=f/5.0 Focal Length=102.0mm ISO Speed Ratings=2000 Flash=Flash did not fire, compulsory flash mode. Exposure Bias Value=0.0EV Exposure Program=Manual Exposure Mode=Manual White Balance=Manual Metering Mode=Pattern Max Aperture Value=f/2.7 Colorspace=reserved Components Configuration=YCbCr Exif Version=2.21&#39;;&#10;&#10;window.HKTE.parseExif(t);&#10;&#60;/script&#62;</span><br></pre></td></tr></table></figure>
 <h4 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h4><ul>
 <li>良神</li>
 <li>30分钟正则式，自行度娘</li>

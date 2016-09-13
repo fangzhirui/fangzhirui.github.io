@@ -1,12 +1,21 @@
+
+
+
 <!DOCTYPE html>
+<!--
+  Date:     2015-5-9
+  @author   Sam Fang
+  @version  2.0
+  @since    ECMA Script 5
+  @see
+  @reference jquery.percentageloader.js
+  @reference createjs's example, valentine's day.
+-->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <title>Best Wish</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />     
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
 <link rel="stylesheet" href="./bs/jquery.percentageloader-0.2.css">
-<script src="./bs/easeljs-0.8.1.min.js"></script>
-<script src="./bs/jquery-1.11.3.min.js"></script>
-<script src="./bs/jquery.percentageloader-0.2.js"></script>
 <style type="text/css">
 html { overflow: hidden; }
 body {
@@ -20,17 +29,17 @@ body {
 }
 
 #container {
-    margin-top: 5em;
+    margin-top: 80px;
 }
 
 .hint {
-    margin-top: 3em;
-    font-size: 2em;
+    margin-top: 50px;
+    font-size: 30px;
     font-family: cursive;
     color: rgb(128, 169, 200);
 }
 </style>
-    
+
 
 </head>
 
@@ -41,20 +50,21 @@ body {
 
 <div>
     <center>
-        <div id="container"><div style="width: 16em; height: 16em; position: relative;"><canvas></canvas><div style="width: 15em; text-align: center; height: 3em; left: 0px; position: absolute; -webkit-user-select: none; top: 5em; color: rgb(128, 169, 200); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 63.5px; line-height: normal; font-family: BebasNeueRegular; text-shadow: rgb(255, 255, 255) 0px 1px 1px;">
-        </div>
-        <div style="width: 254px; text-align: center; height: 1em; overflow: hidden; left: 0px; position: absolute; -webkit-user-select: none; color: rgb(128, 169, 200); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 1.5em; line-height: normal; font-family: BebasNeueRegular; text-shadow: none; top: 12em;">194s</div></div></div>
-        <div id="hint" class="hint">Please Press F11 to watch in Full Screen Mode.</div>
-        <div id="hint2" class="hint">Press Enter to continue ...</div>
+        <div id="container"></div>
+        <div id="hint" class="hint"></div>
+        <div id="hint2" class="hint"></div>
         <canvas id="testCanvas" style="background:#312;" width="0px" height="0px"></canvas>
     <center>
-</center></center></div>
+</div>
 
 <audio width="0" height="0" autoplay="true" loop="true">
 <source src="http://218.102.19.149/examples/html/canon_in_c.mp3" type="audio/mpeg">
 Your browser does not support the audio element.
 </audio>
-
+</body>
+<script src="./bs/easeljs-0.8.1.min.js"></script>
+<script src="./bs/jquery-1.11.3.min.js"></script>
+<script src="./bs/jquery.percentageloader-0.2.js"></script>
 <script>
 
 function drawMain(){
@@ -63,15 +73,15 @@ function drawMain(){
     var container;
     var captureContainers;
     var captureIndex;
-    
+
     // create a new stage and point it at our canvas:
     canvas = document.getElementById("testCanvas");
     canvas.width = window.screen.width;
     canvas.height = window.screen.height;
     stage = new createjs.Stage(canvas);
-    
-    
-    
+
+
+
     var w = canvas.width;
     var h = canvas.height;
 
@@ -91,12 +101,12 @@ function drawMain(){
 
         container.addChild(heart);
     }
-    
+
     var getColor = (function(){
         var r = 51;
         var g = 17;
         var b = 34;
-        
+
         var steps = [{
             rs: 3,
             gs: 1,
@@ -118,11 +128,11 @@ function drawMain(){
             gs: 4,
             bs: 1
         }, {
-	    rs: 4,
+        rs: 4,
             gs: 0.5,
             bs: 0.5
         }, {
-	    rs: 1,
+        rs: 1,
             gs: 4,
             bs: 3
         }, {
@@ -134,11 +144,11 @@ function drawMain(){
             gs: 4.5,
             bs: 2.5
         }];
-        
+
         var dir = -1;
         var step = steps[0];
         return function(){
-	    if(dir < 0){
+        if(dir < 0){
                 r -= step.rs;
                 g -= step.gs;
                 b -= step.bs;
@@ -147,7 +157,7 @@ function drawMain(){
                 g += step.gs;
                 b += step.bs;
             }
-            
+
             if(r <= 0 || g <= 0 || b <= 0){
                 r = 0;
                 g = 0;
@@ -160,13 +170,13 @@ function drawMain(){
             return "rgb(" + parseInt(r) + ", " + parseInt(g) + ", " + parseInt(b) + ")";
         };
     })();
-    var text = new createjs.Text("Wish you would be happy every day!\n\n                             -- To My Dear", "bold 1em Cursive", getColor());
+    var text = new createjs.Text("Wish you would be happy every day!\n\n                             -- To Dear 66", "bold 48px Cursive", getColor());
     text.textAlign = "center";
     text.x = w / 2;
     text.y = h / 2 - text.getMeasuredLineHeight();
     stage.addChild(text);
-    
-    
+
+
     var textColorDir = 1;
     var textColorChange = (function (){
         var counter = 0;
@@ -180,7 +190,7 @@ function drawMain(){
             }
         };
     })();
-    
+
     for (i = 0; i < 100; i++) {
         var captureContainer = new createjs.Container();
         captureContainer.cache(0, 0, w, h);
@@ -190,8 +200,8 @@ function drawMain(){
     // start the tick and point it at the window so we can do some work before updating the stage:
     createjs.Ticker.timingMode = createjs.Ticker.RAF;
     createjs.Ticker.addEventListener("tick", tick);
-    
-    
+
+
     function tick(event) {
         var w = canvas.width;
         var h = canvas.height;
@@ -225,18 +235,18 @@ function drawMain(){
         }
 
         captureContainer.updateCache("source-over");
-        
+
         if(text && textColorChange()){
             stage.removeChild(text);
-            
+
             color = getColor();
-            text = new createjs.Text("Wish you would be happy every day!\n\n                             -- To My Dear", "bold 48px Cursive", color);
+            text = new createjs.Text("Wish you would be happy every day!\n\n                             -- To Dear 66", "bold 48px Cursive", color);
             text.textAlign = "center";
             text.x = w / 2;
             text.y = h / 2 - text.getMeasuredLineHeight();
             stage.addChild(text);
         }
-        
+
         // draw the updates to stage:
         stage.update(event);
     }
@@ -244,13 +254,13 @@ function drawMain(){
 
 
 $(function(){
-    
+
     var prog = 0;
     var loader = $("#container").percentageLoader({
-        width : 180, 
+        width : 180,
         height : 180,
     });
-    
+
     var myAudio = document.getElementsByTagName("audio")[0];
     myAudio.addEventListener("canplay",function(){
         $("#hint").html("Please Press F11 to watch in Full Screen Mode.");
@@ -260,44 +270,34 @@ $(function(){
                 $(".hint").hide(400);
                 $("#container").hide(1000, drawMain);
             }
-        }).bind('touchstart', (function(){
-          var exe = false;
-          return function(){
-            if(!exe){
-              exe = !exe;
-              $(".hint").hide(400);
-              $("#container").hide(1000, drawMain);
-            }
-          };
-        })());
+        });
         displayProg();
     });
-    
+
     myAudio.addEventListener("loadstart", function(){
         $("#container").percentageLoader({progress: 0.1, value: "21s"});
     });
-    
+
     myAudio.addEventListener("progress", function(){
         if (this.readyState === 4){
             if(prog < 1)
                 setTimeout(timerProg,500);
         }
     });
-    
+
     function displayProg(){
         var myAudio = document.getElementsByTagName("audio")[0];
         var currentEnd = myAudio.buffered.end(myAudio.buffered.length - 1);
         var duration = myAudio.duration;
         prog = currentEnd / duration;
-        $("#container").percentageLoader({progress: prog, value: Math.ceil(myAudio.buffered.end(0)) + "s"}); 
+        $("#container").percentageLoader({progress: prog, value: Math.ceil(myAudio.buffered.end(0)) + "s"});
     }
-    
+
     function timerProg(){
         displayProg();
         setTimeout(timerProg,500);
     }
-    
+
 });
 </script>
-
-</body></html>
+</html>
