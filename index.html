@@ -116,7 +116,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						
+						<a href="/tags/node-js/" style="font-size: 10px;">node.js</a>
 					</div>
 				</section>
 				
@@ -201,6 +201,130 @@
 </nav>
 
       <div class="body-wrap">
+  
+    <article id="post-train-tickets" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/06/17/train-tickets/" class="article-date">
+  	<time datetime="2016-06-17T14:10:06.000Z" itemprop="datePublished">2016-06-17</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/06/17/train-tickets/">train_tickets</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="瞄准某一趟车次，有票会给某邮箱发邮件"><a href="#瞄准某一趟车次，有票会给某邮箱发邮件" class="headerlink" title="瞄准某一趟车次，有票会给某邮箱发邮件"></a>瞄准某一趟车次，有票会给某邮箱发邮件</h3><ul>
+<li>每30s调用一次<a href="&#39;http://yupiao.info/&#39;">余票网</a>的第三方api, 检查想要的车次是否有票。</li>
+<li>为啥不用微信呢，因为并木有天朝有网银的银行卡</li>
+<li>另外需要设置Google的<a href="&#39;https://www.google.com/settings/security/lesssecureapps&#39;">低安全性应用程式</a></li>
+</ul>
+<h5 id="dependency"><a href="#dependency" class="headerlink" title="dependency"></a>dependency</h5><p>‘’’</p>
+<p>npm install nodemailer –save;<br>npm install superagent –save;</p>
+<p>node index.js;</p>
+<p>‘’’</p>
+<h5 id="index-js"><a href="#index-js" class="headerlink" title="index.js"></a>index.js</h5><p>‘’’</p>
+<p>var nodemailer = require(‘nodemailer’);<br>var superagent = require(‘superagent’);</p>
+<p>var sendEmail = function(content){</p>
+<pre><code>//HERE WRITE THE PASSWORD
+var transporter = nodemailer.createTransport(&apos;smtps://{EMAIL_ADDRESS|URLENCODED}:{EMAIL_PASSWORD}@smtp.gmail.com&apos;);
+var mailOptions = {
+    from: &apos;{EMAIL_ADDRESS}&apos;, // sender address fangzhirui@gmail.com
+    to: &apos;{EMAIL_ADDRESS01},{EMAIL_ADDRESS02}&apos;, // list of receivers
+    //to: &apos;fangzhirui@sina.com&apos;, // list of receivers
+    subject: content, // Subject line == title
+    text: content, // plaintext body
+    html: content // html body
+};
+
+transporter.sendMail(mailOptions, function(error, info){
+    if(error){
+        return console.log(error);
+    }
+    console.log(&apos;Message sent: &apos; + info.response);
+});
+</code></pre><p>};</p>
+<p>setInterval(function(){</p>
+<pre><code>superagent.get(&apos;http://yupiao.info/api/yp/%E6%BC%A0%E6%B2%B3-%E5%93%88%E5%B0%94%E6%BB%A8-K7040/2016-06-22&apos;)
+    .end(function (err, sres) {
+        if(err){
+            console.log(err);
+        } else {
+            sres = sres || &apos;&apos;;
+            var text = sres.text.trim();
+            if(text.slice(0, 1) == &apos;{&apos; || text.charAt(0) == &apos;[&apos;){
+                var arr = JSON.parse(text).data.split(&apos;,&apos;);
+                if(arr[8] != &apos;无&apos;){
+                    sendEmail(&apos;22号K4070漠河到哈尔滨硬卧&apos; + arr[8] + &apos;张票&apos;);
+                } else if (arr[9] != &apos;无&apos;){
+                    sendEmail(&apos;22号K4070漠河到哈尔滨软卧&apos; + arr[8] + &apos;张票&apos;);
+                }
+            }
+        }
+    });
+
+superagent.get(&apos;http://yupiao.info/api/yp/%E6%BC%A0%E6%B2%B3-%E5%93%88%E5%B0%94%E6%BB%A8-k7042/2016-06-22&apos;)
+    .end(function (err, sres) {
+        if(err){
+            console.log(err);
+        } else {
+            sres = sres || &apos;&apos;;            
+            var text = sres.text.trim();
+            if(text.slice(0, 1) == &apos;{&apos; || text.charAt(0) == &apos;[&apos;){
+                var arr = JSON.parse(text).data.split(&apos;,&apos;);
+                if(arr[8] != &apos;无&apos;){
+                    sendEmail(&apos;22号K4072漠河到哈尔滨硬卧: &apos; + arr[8] + &apos;张票&apos;);
+                } else if (arr[9] != &apos;无&apos;){
+                    sendEmail(&apos;22号K4072漠河到哈尔滨软卧: &apos; + arr[9] + &apos;张票&apos;);
+                }
+            }
+        }
+    });
+</code></pre><p>}, 30000);</p>
+<p>‘’’</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/node-js/">node.js</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
   
     <article id="post-regex01" class="article article-type-post" itemscope itemprop="blogPost">
   
