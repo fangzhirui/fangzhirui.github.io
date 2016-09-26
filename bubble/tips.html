@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="zh-CN" ng-app="mymod">
+  <head>
+    <meta charset="utf-8">
+    <title>My Angular App</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+      .title {
+        margin-left: 30px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="container" ng-controller="NamesCtrl">
+      <div class="row title">
+        <h1>ng-repeat简单检索</h1>
+      </div>
+      <div class="row">
+        <div class="col-md-8">
+          <div class="panel panel-info">
+            <div class="panel-heading">Key</div>
+            <input type="text" class="form-control" placeholder="please input" ng-model="query"/>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8">
+          <div class="panel panel-success">
+            <table class="table table-hover">
+              <thead>
+                <tr class="success">
+                  <th>Class</th>
+                  <th>Content</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr ng-repeat="entry in entries | orderBy: 'class' | filter : query">
+
+                  <td>
+                    {{entry.class}}
+                  </td>
+                  <td>
+                    {{entry.content}}
+                  </td>
+                  <td>
+                    {{entry.desc}}
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+  <script src="http://cdn.bootcss.com/underscore.js/1.8.3/underscore-min.js"></script>
+  <script type="text/javascript">
+    var mod = angular.module('mymod', []);
+    mod.controller('NamesCtrl', function($scope){
+      var raw = [{
+        class: 'mysql',
+        content: 'mysql: mysql -uroot -ppassword',
+        desc: 'cls prod db'
+      },{
+        class: 'curl',
+        content: 'curl -H "Content-Type: application/json" -x POST \'http:\\\\www.baidu.com\'',
+        desc: 'curl json'
+      },{
+        class: 'netstat',
+        content: 'netstat -anp',
+        desc: 'netstat'
+      },{
+        class: 'telnet',
+        content: 'telnet 192.168.0.1 8080',
+        desc: 'telnet'
+      },{
+        class: 'mysql',
+        content: 'mysql: mysql -uroot -ppassword$',
+        desc: 'cls prod db'
+      }];
+      $scope.entries = raw;
+    });
+  </script>
+</html>
