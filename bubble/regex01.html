@@ -50,5 +50,7 @@
 
 var t = 'Make=Canon Model=Canon EOS 5D Mark II Date Time Original=2016:04:01 10:34:02 Date Time Digitized=2016:04:01 10:34:02 Exif Image Width=5616 pixels Exif Image Height=3744 pixels Exposure Time=1/160 sec Shutter Speed Value=0.006 sec F-Number=f/5.0 Aperture Value=f/5.0 Focal Length=102.0mm ISO Speed Ratings=2000 Flash=Flash did not fire, compulsory flash mode. Exposure Bias Value=0.0EV Exposure Program=Manual Exposure Mode=Manual White Balance=Manual Metering Mode=Pattern Max Aperture Value=f/2.7 Colorspace=reserved Components Configuration=YCbCr Exif Version=2.21';
 
-document.write(JSON.stringify(window.HKTE.parseExif(t)));
+document.write("<p>Original String: " + t + "<br>");
+document.write("Key words: Make, Model ..." + "<br>");
+document.write("After spliting: " + JSON.stringify(window.HKTE.parseExif(t)) + "</p>");
 </script>
