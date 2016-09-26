@@ -1,0 +1,54 @@
+<script   src="https://code.jquery.com/jquery-1.12.3.js"   integrity="sha256-1XMpEtA4eKXNNpXcJ1pmMPs8JV+nwLdEqwiJeCQEkyc="   crossorigin="anonymous"></script>
+
+<script>
+(function(window, $) {
+  var reg = (function() {
+    var keywords = [
+      'Make',
+      'Model',
+      'Date Time Original',
+      'Date Time Digitized',
+      'Exif Image Width',
+      'Exif Image Height',
+      'Exposure Time',
+      'Shutter Speed Value',
+      'F-Number',
+      'Aperture Value',
+      'Focal Length',
+      'ISO Speed Ratings',
+      'Flash',
+      'Exposure Bias Value',
+      'Exposure Program',
+      'Exposure Mode',
+      'White Balance',
+      'Metering Mode',
+      'Max Aperture Value',
+      'Colorspace',
+      'Components Configuration',
+      'Exif Version'
+    ];
+    var keys = keywords.join('|');
+    var regStr = '((' + keys + ')' + '=(.*?\\s+(?=' + '(' + keys + ')' + '))|.*$)?';
+    return new RegExp(regStr, 'g');
+  })();
+
+  window.HKTE = window.HKTE || {};
+  window.HKTE.parseExif = function(str){
+    var obj = {};
+    if(str && str.length){
+      var arr = $.grep(str.match(reg), function(element){
+        return element && element.length;
+      });
+      $.each(arr, function(index, element){
+        var i = element.indexOf('=');
+        obj[element.slice(0, i)] = (element.slice(i+1) || '').trim();
+      });
+    }
+    return obj;
+  };
+})(window, jQuery);
+
+var t = 'Make=Canon Model=Canon EOS 5D Mark II Date Time Original=2016:04:01 10:34:02 Date Time Digitized=2016:04:01 10:34:02 Exif Image Width=5616 pixels Exif Image Height=3744 pixels Exposure Time=1/160 sec Shutter Speed Value=0.006 sec F-Number=f/5.0 Aperture Value=f/5.0 Focal Length=102.0mm ISO Speed Ratings=2000 Flash=Flash did not fire, compulsory flash mode. Exposure Bias Value=0.0EV Exposure Program=Manual Exposure Mode=Manual White Balance=Manual Metering Mode=Pattern Max Aperture Value=f/2.7 Colorspace=reserved Components Configuration=YCbCr Exif Version=2.21';
+
+document.write(JSON.stringify(window.HKTE.parseExif(t)));
+</script>
