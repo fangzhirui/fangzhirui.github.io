@@ -40,14 +40,10 @@
               <tbody>
                 <tr ng-repeat="entry in entries | orderBy: 'class' | filter : query">
                   <td>
-                    <pre>
                       {{entry.class}}
-                    </pre>
                   </td>
                   <td>
-                    <pre>
                       {{entry.content}}
-                    </pre>
                   </td>
                   <td>
                     {{entry.desc}}
