@@ -9,13 +9,10 @@
   <meta name="description" content="Promise API简单介绍Promise API的用法，用过感觉还是jq和async体验较好。
 包含：
 
-Promise.all
-Promise.race
-Promise.then
-Promise.then 返回值的小坑
-
-参考：阮一峰的Promise API教程MDN Promise Doc
-Promise.all([fn1(), fn2(), … ])1234567891011121314">
+Promise.all: 用于并发多个，需要所有返回
+Promise.race: 用于并发多个，仅需要最先返回的一个
+Promise.then &amp;amp; Promise.catch: 非并发，不建议配置then中的rejectFn
+Promise.then: 返回值的小坑，then有对函">
 <meta property="og:type" content="article">
 <meta property="og:title" content="ES6 Promise">
 <meta property="og:url" content="http://yoursite.com/2016/10/12/ES6-Promise/index.html">
@@ -23,26 +20,20 @@ Promise.all([fn1(), fn2(), … ])1234567891011121314">
 <meta property="og:description" content="Promise API简单介绍Promise API的用法，用过感觉还是jq和async体验较好。
 包含：
 
-Promise.all
-Promise.race
-Promise.then
-Promise.then 返回值的小坑
-
-参考：阮一峰的Promise API教程MDN Promise Doc
-Promise.all([fn1(), fn2(), … ])1234567891011121314">
-<meta property="og:updated_time" content="2016-10-12T16:27:56.145Z">
+Promise.all: 用于并发多个，需要所有返回
+Promise.race: 用于并发多个，仅需要最先返回的一个
+Promise.then &amp;amp; Promise.catch: 非并发，不建议配置then中的rejectFn
+Promise.then: 返回值的小坑，then有对函">
+<meta property="og:updated_time" content="2016-10-12T16:34:38.936Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ES6 Promise">
 <meta name="twitter:description" content="Promise API简单介绍Promise API的用法，用过感觉还是jq和async体验较好。
 包含：
 
-Promise.all
-Promise.race
-Promise.then
-Promise.then 返回值的小坑
-
-参考：阮一峰的Promise API教程MDN Promise Doc
-Promise.all([fn1(), fn2(), … ])1234567891011121314">
+Promise.all: 用于并发多个，需要所有返回
+Promise.race: 用于并发多个，仅需要最先返回的一个
+Promise.then &amp;amp; Promise.catch: 非并发，不建议配置then中的rejectFn
+Promise.then: 返回值的小坑，then有对函">
   
     <link rel="alternative" href="/atom.xml" title="My Blog" type="application/atom+xml">
   
@@ -260,10 +251,11 @@ Promise.all([fn1(), fn2(), … ])1234567891011121314">
         <h2 id="Promise-API"><a href="#Promise-API" class="headerlink" title="Promise API"></a>Promise API</h2><p>简单介绍Promise API的用法，用过感觉还是jq和async体验较好。</p>
 <p>包含：</p>
 <ul>
-<li>Promise.all</li>
-<li>Promise.race</li>
-<li>Promise.then</li>
-<li>Promise.then 返回值的小坑</li>
+<li>Promise.all: 用于并发多个，需要所有返回</li>
+<li>Promise.race: 用于并发多个，仅需要最先返回的一个</li>
+<li>Promise.then &amp; Promise.catch: 非并发，不建议配置then中的rejectFn</li>
+<li>Promise.then: 返回值的小坑，then有对函数返回值进行判断</li>
+<li>Promise.then: rejectFn和resolveFn中使用setTimeout注意</li>
 </ul>
 <p>参考：<br><a href="http://javascript.ruanyifeng.com/advanced/promise.html" target="_blank" rel="external">阮一峰的Promise API教程</a><br><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" target="_blank" rel="external">MDN Promise Doc</a></p>
 <h3 id="Promise-all-fn1-fn2-…"><a href="#Promise-all-fn1-fn2-…" class="headerlink" title="Promise.all([fn1(), fn2(), … ])"></a>Promise.all([fn1(), fn2(), … ])</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">var</span> p1 = <span class="built_in">Promise</span>.resolve(<span class="number">3</span>);</span><br><span class="line"><span class="keyword">var</span> p2 = <span class="number">1337</span>;</span><br><span class="line"><span class="keyword">var</span> p3 = <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function"><span class="keyword">function</span>(<span class="params">resolve, reject</span>)</span>&#123;</span><br><span class="line">  setTimeout(resolve, <span class="number">100</span>, <span class="string">"foo"</span>);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="built_in">Promise</span>.all([p1, p2, p3]).then(<span class="function"><span class="keyword">function</span>(<span class="params">values</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">return</span> (<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="function"><span class="keyword">function</span>(<span class="params">r1, r2, r3</span>)</span>&#123;</span><br><span class="line">      <span class="built_in">console</span>.log(r1);</span><br><span class="line">      <span class="built_in">console</span>.log(r2);</span><br><span class="line">      <span class="built_in">console</span>.log(r3);</span><br><span class="line">      <span class="keyword">return</span> <span class="string">'Have Done!'</span>;</span><br><span class="line">    &#125;;</span><br><span class="line">  &#125;)().apply(&#123;&#125;, values);</span><br><span class="line">&#125;).then(<span class="function"><span class="keyword">function</span>(<span class="params">value</span>)</span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(value);</span><br><span class="line">&#125;);</span><br><span class="line"><span class="comment">//正常使用all</span></span><br></pre></td></tr></table></figure>
