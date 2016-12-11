@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>柴房</title>
+  <subtitle>试问岭南应不好？却道：此心安处是吾乡。</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://fangzhirui.github.io/"/>
+  <updated>2016-12-11T16:32:17.079Z</updated>
+  <id>http://fangzhirui.github.io/</id>
+  
+  <author>
+    <name>fangzhirui</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Interview Summary 201612</title>
+    <link href="http://fangzhirui.github.io/2016/12/08/Interview%20Summary%20201612/"/>
+    <id>http://fangzhirui.github.io/2016/12/08/Interview Summary 201612/</id>
+    <published>2016-12-08T15:44:09.000Z</published>
+    <updated>2016-12-11T16:32:17.079Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="http://7xtb44.com1.z0.glb.clouddn.com/findjob.jpg" alt=""></p>
+<h4 id="先说结果"><a href="#先说结果" class="headerlink" title="先说结果"></a>先说结果</h4><p>决定改行前端，难以掩盖对前端的喜爱。<br>同一家大厂，又试前端，预料之中仍未拿下。 获得一个独角兽互联网公司和一个创业公司的offer，均为前端开发。<br>认识到不足，补充弹药明年再战。</p>
+<h4 id="大厂"><a href="#大厂" class="headerlink" title="大厂"></a>大厂</h4><p>大厂只过了两面，一面主要考察基础问题，问了得有二十几个问题，共计60min左右</p>
+<ul>
+<li>跨域的几种方法(comet, iframe, jsonp, img)</li>
+<li>jsonp原理</li>
+<li>rem是什么</li>
+<li>jq代理</li>
+<li>如何不刷新整个页面的情况下更新css</li>
+<li>前端cdn的工作原理，涉及到dns了</li>
+<li>浏览器如何载入一个页面的，也就是Dom树，渲染树</li>
+<li>svg和canvas的区别</li>
+</ul>
+<p>大厂二面主要针对实际项目，面试官人很nice，受益匪浅</p>
+<ul>
+<li>水平并排的内联元素中间的间隙是怎么造成的，如何解决</li>
+<li>requirejs和seajs的区别，AMD规范和CMD规范的区别，看的出来阿里系用seajs较多，推崇懒加载</li>
+<li>移动端手机屏幕向下拉时都触发了什么事件</li>
+<li>前端最佳实践，首屏不应超过40个请求，内容不应超过800k，指出我厂的应用前端仍然有优化空间</li>
+<li>express的中间件简单介绍一下</li>
+<li>angularjs的作用域链，自己实现一个angular的绑定要怎样做</li>
+<li>前端如何实现继承性，封装性，多态性</li>
+<li>结束时直接点出两大缺陷，第一是没有大型项目经验，第二是没有移动端开发经验，对于hybrid app流行，移动前端为王的现在，这是致命软肋</li>
+</ul>
+<h4 id="独角兽"><a href="#独角兽" class="headerlink" title="独角兽"></a>独角兽</h4><p>独角兽前两面相对简单，三面总监面有些困难，最后拿到offer，但是薪资不如预期</p>
+<ul>
+<li>页面载入图片，做图片优化有哪些方法</li>
+<li>如果图片过多，导致页面dom元素过多，该如何处理</li>
+<li>js有哪些数据类型</li>
+<li>大数组中查找跟某给出数最接近的数</li>
+<li>localstorage，sessionstorage和cookie的区别</li>
+<li>javascript生成10-100随机数</li>
+<li>对前端组件化如何认识，平时积累比较少，对答支支吾吾</li>
+</ul>
+<h4 id="创业公司"><a href="#创业公司" class="headerlink" title="创业公司"></a>创业公司</h4><p>看了他家的产品，技术前卫，效果也比较绚，面试内容接近全栈，最后获得前端offer</p>
+<ul>
+<li>JVM的结构，是否进行过调优</li>
+<li>spring的bean工厂是否了解，classloader是否知道</li>
+<li>js前端stack溢出如何排查</li>
+<li>用过哪些图表库，基于canvas还是svg，canvas缓存如何实现</li>
+<li>项目前端代码如何组织</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      2016年12月面试总结，想要专注于前端了。
+    
+    </summary>
+    
+    
+      <category term="杂谈" scheme="http://fangzhirui.github.io/tags/%E6%9D%82%E8%B0%88/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Interview Summary 201611</title>
+    <link href="http://fangzhirui.github.io/2016/11/10/Interview%20Summary%20201611/"/>
+    <id>http://fangzhirui.github.io/2016/11/10/Interview Summary 201611/</id>
+    <published>2016-11-10T15:11:43.000Z</published>
+    <updated>2016-12-11T16:30:34.856Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="http://7xtb44.com1.z0.glb.clouddn.com/findjob.jpg" alt=""></p>
+<h4 id="先说结果"><a href="#先说结果" class="headerlink" title="先说结果"></a>先说结果</h4><p>大厂的核心部门，应聘web工程师，被告知职位是全栈。总共四面，喜闻乐见的止步三面了。 总体来说对算法啥的考察比较少，问题针对过往项目而设，广度与深度并重。最后再给大厂效率点个赞，三次都是电话面试，效率很高。</p>
+<h4 id="一面"><a href="#一面" class="headerlink" title="一面"></a>一面</h4><p>一面考察前端比较多，都是根据做过的项目逐步展开，问到你答不出来为止，两名面试官。<br>共计65min</p>
+<ul>
+<li>css3和css2有什么区别，</li>
+<li>angularjs控制器之间通信，是service单例还是rootscope还是parent scope，哪一种最好</li>
+<li>mvvm和mvc区别，应用场景有什么不同，请说出这两类框架的几个实现</li>
+<li>为什么采用html来当做web的页面语言</li>
+<li>css树，html树，页面是怎么渲染出来的，这之中发生了什么</li>
+<li>angularjs脏检查机制（dirty checking）原理，如果你自己实现一个双向绑定的input输入框，如何实现</li>
+<li>浏览器点击事件，键盘事件是什么原理，浏览器是如何实现点击事件和键盘事件的，是javascript还是C++，简单描述你在页面上点击之后浏览器内部发生的事情</li>
+<li>angularjs常用的插件有啥，ui-router跟原生router的区别，ui-router为了解决什么问题</li>
+<li>用过的jquery插件有什么，如果在angular中非要用jquery插件如何实现</li>
+<li>xss是啥，反射型漏洞和注入型漏洞是什么意思</li>
+<li>http的cookie为了解决什么问题，delete请求有没有请求体</li>
+<li>restful api的设计</li>
+<li>对angular2有没有了解，angular2比angular1强在哪</li>
+<li>react和angular场景有什么不同</li>
+<li>找一个前端产品，技术栈是什么，最后如何优化的，还有什么需要优化的</li>
+<li>对angular里面的$q有没有了解，浏览器的promise是如何实现的，javascript还是C++，</li>
+<li>简单介绍promise的几个函数（卧槽前两天刚看过）</li>
+<li>angularjs实现异步的拦截器用什么api</li>
+<li>ES6有那些特性，大概说说，你觉得ES发展的趋势是什么</li>
+</ul>
+<h4 id="二面"><a href="#二面" class="headerlink" title="二面"></a>二面</h4><p>二面主要是后端，跟项目关联较少，考察的大部分都是硬性知识，只有一名面试官。本人后端小菜b，各种布吉岛，最后给我过了也是比较惊讶。<br>共计30min</p>
+<ul>
+<li>java虚拟机结构，年轻代，老年代，永久代，方法区，堆，栈，就是虚拟机的结构，工作原理</li>
+<li>tomcat运行时内存急剧上升，怀疑发生内存溢出，如何debug</li>
+<li>设想一种数据访问层（dao）发生死锁的情况，也就是数据库死锁的情况，请举例说明，以mysql为例，如何debug这种死锁</li>
+<li>load balancer后面有四台java机器，如果一个机器在处理请求时断电了，如何设计架构使得请求能够延续</li>
+<li>executorService用过没有，怎么用的</li>
+<li>spring的aop是什么原理，简单说一下aop是如何实现的，aop的应用场景</li>
+</ul>
+<h4 id="三面"><a href="#三面" class="headerlink" title="三面"></a>三面</h4><p>三面考察数据库，后端架构多一些，两名面试官，听两个人的语气来头都不小，结束时说了一句如果没过会给你发邮件，心里咯噔一下，最后果然没过。<br>共计35min</p>
+<ul>
+<li>如每天产生1G的日志，日志存储的最佳实现，是存成文件，还是存到数据库，还是spark/hadoop，如果用分布式数据库搞行不行，请你设计完整的系统实现这个需求</li>
+<li>有没有用过nosql，关系型数据库和非关系型数据库的区别，典型的非关系型数据库有哪些</li>
+<li>非关系型数据库的应用场景</li>
+<li>运维方面有哪些经验，隐含的就是shell / linux / python 的问题</li>
+<li>有没有其他的爱好</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      2016年11月面试总结，职位全栈，水平有待提高。
+    
+    </summary>
+    
+    
+      <category term="杂谈" scheme="http://fangzhirui.github.io/tags/%E6%9D%82%E8%B0%88/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ES6 Promise</title>
+    <link href="http://fangzhirui.github.io/2016/10/12/ES6-Promise/"/>
+    <id>http://fangzhirui.github.io/2016/10/12/ES6-Promise/</id>
+    <published>2016-10-12T15:59:50.000Z</published>
+    <updated>2016-12-11T15:55:28.209Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="Promise-API"><a href="#Promise-API" class="headerlink" title="Promise API"></a>Promise API</h4><p>！<a href="http://7xtb44.com1.z0.glb.clouddn.com/promise.jpg" target="_blank" rel="external"></a></p>
+<p>包含：</p>
+<ul>
+<li>Promise.all: 用于并发多个，需要所有返回</li>
+<li>Promise.race: 用于并发多个，仅需要最先返回的一个</li>
+<li>Promise.then &amp; Promise.catch: 非并发，不建议配置then中的rejectFn</li>
+<li>Promise.then: 返回值的小坑，then有对函数返回值进行判断</li>
+<li>Promise.then: rejectFn和resolveFn中使用setTimeout注意</li>
+</ul>
+<p>参考：<br><a href="http://javascript.ruanyifeng.com/advanced/promise.html" target="_blank" rel="external">阮一峰的Promise API教程</a><br><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" target="_blank" rel="external">MDN Promise Doc</a></p>
+<h4 id="Promise-all-fn1-fn2-…"><a href="#Promise-all-fn1-fn2-…" class="headerlink" title="Promise.all([fn1(), fn2(), … ])"></a>Promise.all([fn1(), fn2(), … ])</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">var</span> p1 = <span class="built_in">Promise</span>.resolve(<span class="number">3</span>);</span><br><span class="line"><span class="keyword">var</span> p2 = <span class="number">1337</span>;</span><br><span class="line"><span class="keyword">var</span> p3 = <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function"><span class="keyword">function</span>(<span class="params">resolve, reject</span>)</span>&#123;</span><br><span class="line">  setTimeout(resolve, <span class="number">100</span>, <span class="string">"foo"</span>);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="built_in">Promise</span>.all([p1, p2, p3]).then(<span class="function"><span class="keyword">function</span>(<span class="params">values</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">return</span> (<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="function"><span class="keyword">function</span>(<span class="params">r1, r2, r3</span>)</span>&#123;</span><br><span class="line">      <span class="built_in">console</span>.log(r1);</span><br><span class="line">      <span class="built_in">console</span>.log(r2);</span><br><span class="line">      <span class="built_in">console</span>.log(r3);</span><br><span class="line">      <span class="keyword">return</span> <span class="string">'Have Done!'</span>;</span><br><span class="line">    &#125;;</span><br><span class="line">  &#125;)().apply(&#123;&#125;, values);</span><br><span class="line">&#125;).then(<span class="function"><span class="keyword">function</span>(<span class="params">value</span>)</span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(value);</span><br><span class="line">&#125;);</span><br><span class="line"><span class="comment">//正常使用all</span></span><br></pre></td></tr></table></figure>
+<h4 id="Promise-race-fn1-fn2-…"><a href="#Promise-race-fn1-fn2-…" class="headerlink" title="Promise.race([fn1(), fn2(), … ])"></a>Promise.race([fn1(), fn2(), … ])</h4><p>正常使用race，意思为竞争，只会处理较快完成的一个，其他舍弃。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">var</span> p5 = <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function"><span class="keyword">function</span>(<span class="params">resolve, reject</span>) </span>&#123;</span><br><span class="line">    setTimeout(resolve, <span class="number">500</span>, <span class="string">"five"</span>);</span><br><span class="line">&#125;);</span><br><span class="line"><span class="keyword">var</span> p6 = <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function"><span class="keyword">function</span>(<span class="params">resolve, reject</span>) </span>&#123;</span><br><span class="line">    setTimeout(reject, <span class="number">100</span>, <span class="string">"six"</span>);</span><br><span class="line">&#125;);</span><br><span class="line"><span class="built_in">Promise</span>.race([p5, p6])</span><br><span class="line">  .then(<span class="function"><span class="keyword">function</span>(<span class="params">v</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(v);</span><br><span class="line">  &#125;).catch(<span class="function"><span class="keyword">function</span>(<span class="params">v</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(v);<span class="comment">//six</span></span><br><span class="line">  &#125;);</span><br><span class="line"><span class="comment">//正常使用race, 意思为竞争, 谁快返回谁</span></span><br></pre></td></tr></table></figure>
+<h4 id="Promise-then-function-resovleFn-rejectFn"><a href="#Promise-then-function-resovleFn-rejectFn" class="headerlink" title="Promise.then(function(resovleFn, rejectFn))"></a>Promise.then(function(resovleFn, rejectFn))</h4><p>正常非并发使用，建议使用 then，then，…，then，catch的形式<br>注意第三个then里面reject之后，直接跳转到catch，第四个then不会运行到</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Promise</span>.resolve(<span class="number">2</span>)</span><br><span class="line">  .then(<span class="function"><span class="keyword">function</span>(<span class="params">v</span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(v);</span><br><span class="line">    <span class="keyword">return</span> v * <span class="number">2</span>;</span><br><span class="line">  &#125;)</span><br><span class="line">  .then(<span class="function"><span class="keyword">function</span>(<span class="params">v</span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(v);</span><br><span class="line">    <span class="keyword">return</span> v * <span class="number">2</span>;</span><br><span class="line">  &#125;)</span><br><span class="line">  .then(<span class="function"><span class="keyword">function</span>(<span class="params">v</span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(v);</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">Promise</span>.reject(v * <span class="number">2</span>);</span><br><span class="line">  &#125;)</span><br><span class="line">  .then(<span class="function"><span class="keyword">function</span>(<span class="params">v</span>)</span>&#123;</span><br><span class="line">    setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">      <span class="built_in">console</span>.log(<span class="string">"这是一个不会运行到的错误的then"</span>);</span><br><span class="line">      <span class="built_in">console</span>.log(<span class="string">"setTimeout外面的fn将会直接返回undefined, 下面的return v * 2将丢失"</span>);</span><br><span class="line">      <span class="keyword">return</span> v * <span class="number">2</span>;</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;)</span><br><span class="line">  .catch(<span class="function"><span class="keyword">function</span>(<span class="params">v</span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'catch:'</span> + v);</span><br><span class="line">  &#125;);</span><br><span class="line">  <span class="comment">//正常使用catch,then</span></span><br></pre></td></tr></table></figure>
+<p>Promise.then(function(resovleFn, rejectFn)) 每次返回的都是新的Promise</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">var</span> p1 = <span class="built_in">Promise</span>.reject(<span class="number">1</span>);</span><br><span class="line"><span class="keyword">var</span> p2 = p1</span><br><span class="line">  .then(<span class="function"><span class="keyword">function</span>(<span class="params">v</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> c = v * <span class="number">2</span>;</span><br><span class="line">    <span class="built_in">console</span>.log(c + <span class="string">' |'</span>);</span><br><span class="line">    <span class="keyword">return</span> c;</span><br><span class="line">  &#125;, <span class="function"><span class="keyword">function</span>(<span class="params">v</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> c = v * <span class="number">3</span>;</span><br><span class="line">    <span class="built_in">console</span>.log(c + <span class="string">' |'</span>);</span><br><span class="line">    <span class="keyword">return</span> c;</span><br><span class="line">  &#125;);</span><br><span class="line"><span class="built_in">console</span>.log(p2 === p1); <span class="comment">//false</span></span><br><span class="line"><span class="comment">//说明每次then返回的都是新Promise</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">Promise</span>.reject(<span class="number">1</span>)</span><br><span class="line">  .then(<span class="function"><span class="keyword">function</span>(<span class="params">v</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> c = v * <span class="number">2</span>;</span><br><span class="line">    <span class="built_in">console</span>.log(c + <span class="string">' |'</span>);</span><br><span class="line">    <span class="keyword">return</span> c;</span><br><span class="line">  &#125;, <span class="function"><span class="keyword">function</span>(<span class="params">v</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> c = v * <span class="number">3</span>;</span><br><span class="line">    <span class="built_in">console</span>.log(c + <span class="string">' |'</span>);</span><br><span class="line">    <span class="keyword">return</span> c;</span><br><span class="line">  &#125;).then(<span class="function"><span class="keyword">function</span>(<span class="params">v</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> c = v * <span class="number">2</span>;</span><br><span class="line">    <span class="built_in">console</span>.log(c + <span class="string">' |'</span>);</span><br><span class="line">    <span class="keyword">return</span> c;</span><br><span class="line">  &#125;, <span class="function"><span class="keyword">function</span>(<span class="params">v</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> c = v * <span class="number">3</span>;</span><br><span class="line">    <span class="built_in">console</span>.log(c + <span class="string">' |'</span>);</span><br><span class="line">    <span class="keyword">return</span> c;</span><br><span class="line">  &#125;);</span><br><span class="line"><span class="comment">/*</span><br><span class="line"> console.log: 3 | 6. 第一次调用的是reject fn, 第二次是resolve fn,</span><br><span class="line"> 说明链式触发只对下一个有效,也印证了每个then都是一个新的Promise</span><br><span class="line">*/</span></span><br></pre></td></tr></table></figure>
+<p>Promise.then(function(resovleFn, rejectFn)) 有对resovleFn和rejectFn的返回值类型做判断，与上例对比看</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Promise</span>.reject(<span class="number">1</span>)</span><br><span class="line">  .then(<span class="function"><span class="keyword">function</span>(<span class="params">v</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> c = v * <span class="number">2</span>;</span><br><span class="line">    <span class="built_in">console</span>.log(c + <span class="string">' |'</span>);</span><br><span class="line">    <span class="keyword">return</span> c;</span><br><span class="line">  &#125;, <span class="function"><span class="keyword">function</span>(<span class="params">v</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> c = v * <span class="number">3</span>;</span><br><span class="line">    <span class="built_in">console</span>.log(c);</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">Promise</span>.reject(c);</span><br><span class="line">  &#125;).then(<span class="function"><span class="keyword">function</span>(<span class="params">v</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> c = v * <span class="number">2</span>;</span><br><span class="line">    <span class="built_in">console</span>.log(c + <span class="string">' |'</span>);</span><br><span class="line">    <span class="keyword">return</span> c;</span><br><span class="line">  &#125;, <span class="function"><span class="keyword">function</span>(<span class="params">v</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> c = v * <span class="number">3</span>;</span><br><span class="line">    <span class="built_in">console</span>.log(c + <span class="string">' |'</span>);</span><br><span class="line">    <span class="keyword">return</span> c;</span><br><span class="line">  &#125;);</span><br><span class="line">  <span class="comment">/*</span><br><span class="line">    console.log: 3 | 9. 设置第一个then的返回值为Promise,发现两次都是reject</span><br><span class="line">    说明then有对fn的返回值进行判断,是Promise则就地返回,否则自己生成Promise再返回</span><br><span class="line">  */</span></span><br></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      简单介绍Promise API的用法，用过感觉还是jq和async体验较好。
+    
+    </summary>
+    
+    
+      <category term="node.js" scheme="http://fangzhirui.github.io/tags/node-js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Angular实践(1)</title>
+    <link href="http://fangzhirui.github.io/2016/09/27/angular-cookie-01/"/>
+    <id>http://fangzhirui.github.io/2016/09/27/angular-cookie-01/</id>
+    <published>2016-09-26T16:59:49.000Z</published>
+    <updated>2016-12-10T12:42:35.376Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="简单的命令检索"><a href="#简单的命令检索" class="headerlink" title="简单的命令检索"></a>简单的命令检索</h4><p>angular入门应用，想起来会继续添东西。</p>
+<ul>
+<li><a href="http://fangzhirui.github.io/bubble/tips.html">live demo</a></li>
+<li>留坑，打算做成一个常用工具箱</li>
+<li>后续再加动画</li>
+<li>Google娘被墙，换成bootstrap的cdn</li>
+</ul>
+<h4 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h4><ul>
+<li><a href="http://www.itshouce.com.cn/linux/linux-netstat.html" target="_blank" rel="external">man netstat</a></li>
+<li><a href="https://linux.cn/article-2434-1.html" target="_blank" rel="external">netstat example</a></li>
+<li><a href="http://linux.vbird.org/" target="_blank" rel="external">鸟哥linux私房菜</a></li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      angular的mvvm在表单类应用中能大幅提高生产力，本例演示了用angular和bootstrap展示常用linux命令和filter。
+    
+    </summary>
+    
+    
+      <category term="front" scheme="http://fangzhirui.github.io/tags/front/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>瞄火车票的爬虫</title>
+    <link href="http://fangzhirui.github.io/2016/06/17/train-tickets/"/>
+    <id>http://fangzhirui.github.io/2016/06/17/train-tickets/</id>
+    <published>2016-06-17T14:10:06.000Z</published>
+    <updated>2016-12-10T12:56:47.470Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="瞄准某一趟车次，有票的话会用自己的Gmail给自己的工作邮箱发邮件"><a href="#瞄准某一趟车次，有票的话会用自己的Gmail给自己的工作邮箱发邮件" class="headerlink" title="瞄准某一趟车次，有票的话会用自己的Gmail给自己的工作邮箱发邮件"></a>瞄准某一趟车次，有票的话会用自己的Gmail给自己的工作邮箱发邮件</h4><ul>
+<li>每30s调用一次<a href="http://yupiao.info/" target="_blank" rel="external">余票网</a>的第三方api, 检查想要的车次是否有票。</li>
+<li>为啥不用微信呢，因为并木有天朝有网银的银行卡</li>
+<li>另外需要设置Google的<a href="https://www.google.com/settings/security/lesssecureapps" target="_blank" rel="external">低安全性应用程式</a></li>
+</ul>
+<blockquote>
+<p>   dependency</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">npm install nodemailer --save;</span><br><span class="line">npm install superagent --save;</span><br><span class="line"></span><br><span class="line">&gt; index.js;</span><br></pre></td></tr></table></figure>
+<h5 id="index-js"><a href="#index-js" class="headerlink" title="index.js"></a>index.js</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">var</span> nodemailer = <span class="built_in">require</span>(<span class="string">'nodemailer'</span>);</span><br><span class="line"><span class="keyword">var</span> superagent = <span class="built_in">require</span>(<span class="string">'superagent'</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> sendEmail = <span class="function"><span class="keyword">function</span>(<span class="params">content</span>)</span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="comment">//HERE WRITE THE PASSWORD</span></span><br><span class="line">	<span class="keyword">var</span> transporter = nodemailer.createTransport(<span class="string">'smtps://&#123;EMAIL_ADDRESS|URLENCODED&#125;:&#123;EMAIL_PASSWORD&#125;@smtp.gmail.com'</span>);</span><br><span class="line">	<span class="keyword">var</span> mailOptions = &#123;</span><br><span class="line">		from: <span class="string">'&#123;EMAIL_ADDRESS&#125;'</span>, <span class="comment">// sender address fangzhirui@gmail.com</span></span><br><span class="line">		to: <span class="string">'&#123;EMAIL_ADDRESS01&#125;,&#123;EMAIL_ADDRESS02&#125;'</span>, <span class="comment">// list of receivers</span></span><br><span class="line">		<span class="comment">//to: 'fangzhirui@sina.com', // list of receivers</span></span><br><span class="line">		subject: content, <span class="comment">// Subject line == title</span></span><br><span class="line">		text: content, <span class="comment">// plaintext body</span></span><br><span class="line">		html: content <span class="comment">// html body</span></span><br><span class="line">	&#125;;</span><br><span class="line"></span><br><span class="line">	transporter.sendMail(mailOptions, <span class="function"><span class="keyword">function</span>(<span class="params">error, info</span>)</span>&#123;</span><br><span class="line">		<span class="keyword">if</span>(error)&#123;</span><br><span class="line">			<span class="keyword">return</span> <span class="built_in">console</span>.log(error);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="built_in">console</span>.log(<span class="string">'Message sent: '</span> + info.response);</span><br><span class="line">	&#125;);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">setInterval(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line"></span><br><span class="line">	superagent.get(<span class="string">'http://yupiao.info/api/yp/%E6%BC%A0%E6%B2%B3-%E5%93%88%E5%B0%94%E6%BB%A8-K7040/2016-06-22'</span>)</span><br><span class="line">		.end(<span class="function"><span class="keyword">function</span> (<span class="params">err, sres</span>) </span>&#123;</span><br><span class="line">			<span class="keyword">if</span>(err)&#123;</span><br><span class="line">				<span class="built_in">console</span>.log(err);</span><br><span class="line">			&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">				sres = sres || <span class="string">''</span>;</span><br><span class="line">				<span class="keyword">var</span> text = sres.text.trim();</span><br><span class="line">				<span class="keyword">if</span>(text.slice(<span class="number">0</span>, <span class="number">1</span>) == <span class="string">'&#123;'</span> || text.charAt(<span class="number">0</span>) == <span class="string">'['</span>)&#123;</span><br><span class="line">					<span class="keyword">var</span> arr = <span class="built_in">JSON</span>.parse(text).data.split(<span class="string">','</span>);</span><br><span class="line">					<span class="keyword">if</span>(arr[<span class="number">8</span>] != <span class="string">'无'</span>)&#123;</span><br><span class="line">						sendEmail(<span class="string">'22号K4070漠河到哈尔滨硬卧'</span> + arr[<span class="number">8</span>] + <span class="string">'张票'</span>);</span><br><span class="line">					&#125; <span class="keyword">else</span> <span class="keyword">if</span> (arr[<span class="number">9</span>] != <span class="string">'无'</span>)&#123;</span><br><span class="line">						sendEmail(<span class="string">'22号K4070漠河到哈尔滨软卧'</span> + arr[<span class="number">8</span>] + <span class="string">'张票'</span>);</span><br><span class="line">					&#125;</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;);</span><br><span class="line"></span><br><span class="line">	superagent.get(<span class="string">'http://yupiao.info/api/yp/%E6%BC%A0%E6%B2%B3-%E5%93%88%E5%B0%94%E6%BB%A8-k7042/2016-06-22'</span>)</span><br><span class="line">		.end(<span class="function"><span class="keyword">function</span> (<span class="params">err, sres</span>) </span>&#123;</span><br><span class="line">			<span class="keyword">if</span>(err)&#123;</span><br><span class="line">				<span class="built_in">console</span>.log(err);</span><br><span class="line">			&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">				sres = sres || <span class="string">''</span>;</span><br><span class="line">				<span class="keyword">var</span> text = sres.text.trim();</span><br><span class="line">				<span class="keyword">if</span>(text.slice(<span class="number">0</span>, <span class="number">1</span>) == <span class="string">'&#123;'</span> || text.charAt(<span class="number">0</span>) == <span class="string">'['</span>)&#123;</span><br><span class="line">					<span class="keyword">var</span> arr = <span class="built_in">JSON</span>.parse(text).data.split(<span class="string">','</span>);</span><br><span class="line">					<span class="keyword">if</span>(arr[<span class="number">8</span>] != <span class="string">'无'</span>)&#123;</span><br><span class="line">						sendEmail(<span class="string">'22号K4072漠河到哈尔滨硬卧: '</span> + arr[<span class="number">8</span>] + <span class="string">'张票'</span>);</span><br><span class="line">					&#125; <span class="keyword">else</span> <span class="keyword">if</span> (arr[<span class="number">9</span>] != <span class="string">'无'</span>)&#123;</span><br><span class="line">						sendEmail(<span class="string">'22号K4072漠河到哈尔滨软卧: '</span> + arr[<span class="number">9</span>] + <span class="string">'张票'</span>);</span><br><span class="line">					&#125;</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;);</span><br><span class="line">&#125;, <span class="number">30000</span>);</span><br></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      node.js的写的定时任务，定时爬火车票，有则立刻发邮件通知我。
+    
+    </summary>
+    
+    
+      <category term="node.js" scheme="http://fangzhirui.github.io/tags/node-js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>正则式匹配EXIF字符串</title>
+    <link href="http://fangzhirui.github.io/2016/04/19/regex01/"/>
+    <id>http://fangzhirui.github.io/2016/04/19/regex01/</id>
+    <published>2016-04-19T15:22:04.000Z</published>
+    <updated>2016-12-10T12:49:07.825Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="js正则式切割带有关键字的字符串"><a href="#js正则式切割带有关键字的字符串" class="headerlink" title="js正则式切割带有关键字的字符串"></a>js正则式切割带有关键字的字符串</h4><ul>
+<li>本例就是把一个长串根据关键字切割开.</li>
+<li><a href="http://fangzhirui.github.io/bubble/regex01.html">live demo</a></li>
+</ul>
+<h4 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h4><ul>
+<li><a href="https://github.com/Dijkspicy" target="_blank" rel="external">良神</a></li>
+<li>30分钟正则式，自行度娘</li>
+<li><a href="http://www.cnblogs.com/rubylouvre/archive/2010/03/09/1681222.html" target="_blank" rel="external">司徒正美的正则式入门</a></li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      js正则式切割带有关键字的字符串
+    
+    </summary>
+    
+    
+      <category term="front" scheme="http://fangzhirui.github.io/tags/front/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CreateJs的demo</title>
+    <link href="http://fangzhirui.github.io/2015/11/01/66/"/>
+    <id>http://fangzhirui.github.io/2015/11/01/66/</id>
+    <published>2015-11-01T14:21:47.000Z</published>
+    <updated>2016-12-11T16:30:26.898Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="一个表白的小网页"><a href="#一个表白的小网页" class="headerlink" title="一个表白的小网页"></a>一个表白的小网页</h4><ul>
+<li><a href="http://fangzhirui.github.io/66/bs.html">LIVE DEMO</a></li>
+<li>原版来自createjs的Demo，稍加改动. <a href="https://github.com/CreateJS/EaselJS/blob/master/examples/Cache_vday.html" target="_blank" rel="external">Demo的代码</a></li>
+</ul>
+<ul>
+<li>用到了另一个插件， <a href="http://widgets.better2web.com/loader/" target="_blank" rel="external">jquery.percentageloader.js</a></li>
+</ul>
+<ul>
+<li>学艺不精，并不适用于移动端</li>
+<li><p>背景音乐是卡农, 早年用热带鱼屏保时就喜欢这首曲子</p>
+</li>
+<li><p>自娱自乐</p>
+</li>
+<li>背景音乐迁移到七牛了，公司服务器小烂    ..</li>
+</ul>
+<hr>
+<h4 id="2016-11-28更新"><a href="#2016-11-28更新" class="headerlink" title="2016.11.28更新"></a>2016.11.28更新</h4><p>PO图一张，果然是喜欢的妹纸拍的，越看越顺眼</p>
+<h2 id=""><a href="#" class="headerlink" title=""></a><img src="http://7xtb44.com1.z0.glb.clouddn.com/self1.jpg" alt=""></h2>]]></content>
+    
+    <summary type="html">
+    
+      根据createjs的demo改的动画，添加了滚动条和背景音乐。
+    
+    </summary>
+    
+    
+      <category term="front" scheme="http://fangzhirui.github.io/tags/front/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>自定义jq插件</title>
+    <link href="http://fangzhirui.github.io/2015/09/10/jqplugin/"/>
+    <id>http://fangzhirui.github.io/2015/09/10/jqplugin/</id>
+    <published>2015-09-10T14:53:07.000Z</published>
+    <updated>2016-12-10T12:46:10.060Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://www.cnblogs.com/Wayou/p/jquery_plugin_tutorial.html" target="_blank" rel="external">参考-刘哇勇的cnblog</a></p>
+<h4 id="简单介绍jq自定义插件的写法，主要分为类扩展和对象扩展。"><a href="#简单介绍jq自定义插件的写法，主要分为类扩展和对象扩展。" class="headerlink" title="简单介绍jq自定义插件的写法，主要分为类扩展和对象扩展。"></a>简单介绍jq自定义插件的写法，主要分为类扩展和对象扩展。</h4><h4 id="静态扩展"><a href="#静态扩展" class="headerlink" title="静态扩展"></a>静态扩展</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">$.extend(&#123;</span><br><span class="line">    sayHello: <span class="function"><span class="keyword">function</span>(<span class="params">name</span>) </span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">'Hello,'</span> + (name ? name : <span class="string">'Dude'</span>) + <span class="string">'!'</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">$.sayHello(); <span class="comment">//调用</span></span><br><span class="line">$.sayHello(<span class="string">'Wayou'</span>); <span class="comment">//带参调用</span></span><br></pre></td></tr></table></figure>
+<h4 id="对象级别扩展"><a href="#对象级别扩展" class="headerlink" title="对象级别扩展"></a>对象级别扩展</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">$.fn.myPlugin = <span class="function"><span class="keyword">function</span>(<span class="params">options</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> defaults = &#123;</span><br><span class="line">        <span class="string">'color'</span>: <span class="string">'red'</span>,</span><br><span class="line">        <span class="string">'fontSize'</span>: <span class="string">'12px'</span></span><br><span class="line">    &#125;;</span><br><span class="line">    <span class="keyword">var</span> settings = $.extend(defaults, options);</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">this</span>.css(&#123;</span><br><span class="line">        <span class="string">'color'</span>: settings.color,</span><br><span class="line">        <span class="string">'fontSize'</span>: settings.fontSize</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">$(<span class="string">'a'</span>).myPlugin(&#123; <span class="comment">// 调用</span></span><br><span class="line">    <span class="string">'color'</span>: <span class="string">'#2C9929'</span>,</span><br><span class="line">    <span class="string">'fontSize'</span>: <span class="string">'20px'</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<h4 id="更为复杂的对象级别"><a href="#更为复杂的对象级别" class="headerlink" title="更为复杂的对象级别"></a>更为复杂的对象级别</h4><h5 id="分发者"><a href="#分发者" class="headerlink" title="分发者"></a>分发者</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">;(<span class="function"><span class="keyword">function</span>(<span class="params">$, window, document, undefined</span>)</span>&#123;</span><br><span class="line"></span><br><span class="line">  <span class="comment">/*</span><br><span class="line">    hkte may contains 4 sub modules</span><br><span class="line">   */</span></span><br><span class="line">  <span class="keyword">var</span> HOMEWORKTABLE = HomeworkTable.name.toLowerCase();</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">function</span> <span class="title">getObj</span>(<span class="params">name, $ele, data, options</span>)</span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/*</span><br><span class="line">      List all of all cases</span><br><span class="line">     */</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">switch</span>(name.toLowerCase())&#123;</span><br><span class="line">      <span class="keyword">case</span> HOMEWORKTABLE:</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> HomeworkTable($ele, data, options);</span><br><span class="line">      <span class="keyword">default</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">undefined</span>;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">  $.fn.hkte = <span class="function"><span class="keyword">function</span>(<span class="params">name, data, options</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> obj = getObj(name, <span class="keyword">this</span>, data, options);</span><br><span class="line">    <span class="keyword">return</span> data ? obj.load(data, options):obj.get();</span><br><span class="line">  &#125;;</span><br><span class="line"></span><br><span class="line">&#125;)(jQuery, <span class="built_in">window</span>, <span class="built_in">document</span>);</span><br></pre></td></tr></table></figure>
+<h5 id="处理函数"><a href="#处理函数" class="headerlink" title="处理函数"></a>处理函数</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span><br><span class="line"> * A JQuery plugin</span><br><span class="line"> * @param &#123;array&#125; eles    [JQuery Object]</span><br><span class="line"> * @param &#123;json || string&#125; content [Business data]</span><br><span class="line"> * @param &#123;json&#125; options [Drawing options]</span><br><span class="line"> */</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">HomeworkTable</span>(<span class="params">eles, content, options</span>) </span>&#123;</span><br><span class="line"></span><br><span class="line">  <span class="comment">//eles是jq对象</span></span><br><span class="line">  <span class="keyword">var</span> defaults = &#123;</span><br><span class="line">    height: <span class="string">'100px'</span>,</span><br><span class="line">    width: <span class="string">'100px'</span></span><br><span class="line">  &#125;;</span><br><span class="line"></span><br><span class="line">  <span class="comment">/*</span><br><span class="line">    Init object properties</span><br><span class="line">   */</span></span><br><span class="line">  <span class="keyword">this</span>.$elements = eles;</span><br><span class="line">  <span class="keyword">this</span>.opts = $.extend(&#123;&#125;, defaults, options);</span><br><span class="line">  <span class="keyword">this</span>.data = content;</span><br><span class="line"></span><br><span class="line">  <span class="comment">/*</span><br><span class="line">    Cache the data if necessary</span><br><span class="line">   */</span></span><br><span class="line">  <span class="keyword">this</span>.$elements.data(<span class="string">"data"</span>, <span class="keyword">this</span>.data);</span><br><span class="line">  <span class="keyword">this</span>.$elements.data(<span class="string">"opts"</span>, <span class="keyword">this</span>.opts);</span><br><span class="line"></span><br><span class="line">  <span class="comment">/*</span><br><span class="line">    Other functions ...</span><br><span class="line">   */</span></span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">HomeworkTable.prototype = &#123;</span><br><span class="line"></span><br><span class="line">  load: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">var</span> data = <span class="keyword">this</span>.data;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">this</span>.$elements.each(<span class="function"><span class="keyword">function</span>(<span class="params">index, ele</span>)</span>&#123;</span><br><span class="line">      <span class="comment">/*</span><br><span class="line">        Under most situations, this.data would be displayed after 'beautifying' other than setting &#123;html&#125; = data simply.</span><br><span class="line"></span><br><span class="line">        In jq src, callback is called like callback.apply(ele, args). It means that running context is changed compulsively.</span><br><span class="line">        That's the cause of using var data = this.data.</span><br><span class="line">       */</span></span><br><span class="line"></span><br><span class="line">      $(ele).html(data);</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  get: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (<span class="keyword">this</span>.$elements.length) &#123;</span><br><span class="line">      <span class="keyword">return</span> $.map(<span class="keyword">this</span>.$elements, <span class="function"><span class="keyword">function</span>(<span class="params">ele, index</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> &#123;</span><br><span class="line">          data: $(ele).data(<span class="string">"data"</span>),</span><br><span class="line">          opts: $(ele).data(<span class="string">"opts"</span>)</span><br><span class="line">        &#125;;</span><br><span class="line">      &#125;);</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">      <span class="keyword">return</span> [];</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      jq插件的写法
+    
+    </summary>
+    
+    
+      <category term="front" scheme="http://fangzhirui.github.io/tags/front/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>js作用域和上下文</title>
+    <link href="http://fangzhirui.github.io/2015/09/10/scope-context-md/"/>
+    <id>http://fangzhirui.github.io/2015/09/10/scope-context-md/</id>
+    <published>2015-09-10T04:01:32.000Z</published>
+    <updated>2016-12-10T12:59:40.630Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="作用域-scope-和上下文-context-的不同"><a href="#作用域-scope-和上下文-context-的不同" class="headerlink" title="作用域(scope)和上下文(context)的不同"></a>作用域(scope)和上下文(context)的不同</h4><p>上下文在特定函数被调用时创建,上下文往往是一个对象,如Window.<br>作用域是在特定函数被定义时就决定了的,作用域往往是一个或多个代码块运行之后的得到的一堆变量。</p>
+<p><a href="http://blog.csdn.net/wangfupeng1988/article/details/39673755" target="_blank" rel="external">描述作用域和上下文</a></p>
+<p>函数执行前，引擎会将当前函数的上下文，函数内部预声明的变量，以及作用域包裹在活动对象(active-object)内。<br>执行该函数时，所有变量都会从活动对象中寻找。</p>
+<h4 id="foo-和new-foo-的不同"><a href="#foo-和new-foo-的不同" class="headerlink" title="foo()和new foo()的不同"></a><code>foo()</code>和<code>new foo()</code>的不同</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">foo</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="keyword">this</span>.name = <span class="string">'foo'</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> f = <span class="keyword">new</span> foo(); <span class="comment">// typeof f == 'object';</span></span><br><span class="line"><span class="keyword">var</span> f = foo(); <span class="comment">// type of f == 'function';</span></span><br></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      介绍JS的作用域和上下文的不同。很久以后回头再看，顿觉有些东西可能说不明白，还是要自己体会。
+    
+    </summary>
+    
+    
+      <category term="front" scheme="http://fangzhirui.github.io/tags/front/"/>
+    
+  </entry>
+  
+</feed>
