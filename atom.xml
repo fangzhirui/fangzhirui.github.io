@@ -164,7 +164,7 @@
     <link href="http://fangzhirui.github.io/2016/11/10/Interview%20Summary%20201611/"/>
     <id>http://fangzhirui.github.io/2016/11/10/Interview Summary 201611/</id>
     <published>2016-11-10T15:11:43.000Z</published>
-    <updated>2016-12-11T16:30:34.856Z</updated>
+    <updated>2018-04-09T16:16:15.412Z</updated>
     
     <content type="html"><![CDATA[<p><img src="http://7xtb44.com1.z0.glb.clouddn.com/findjob.jpg" alt=""></p>
 <h4 id="先说结果"><a href="#先说结果" class="headerlink" title="先说结果"></a>先说结果</h4><p>大厂的核心部门，应聘web工程师，被告知职位是全栈。总共四面，喜闻乐见的止步三面了。 总体来说对算法啥的考察比较少，问题针对过往项目而设，广度与深度并重。最后再给大厂效率点个赞，三次都是电话面试，效率很高。</p>
@@ -211,7 +211,7 @@
     
     <summary type="html">
     
-      2016年11月面试总结，职位全栈，水平有待提高。
+      2016年11月面试总结，职位前端，水平有待提高。
     
     </summary>
     
@@ -225,7 +225,7 @@
     <link href="http://fangzhirui.github.io/2016/10/12/ES6-Promise/"/>
     <id>http://fangzhirui.github.io/2016/10/12/ES6-Promise/</id>
     <published>2016-10-12T15:59:50.000Z</published>
-    <updated>2016-12-11T16:41:52.547Z</updated>
+    <updated>2018-04-09T16:20:12.850Z</updated>
     
     <content type="html"><![CDATA[<h4 id="Promise-API"><a href="#Promise-API" class="headerlink" title="Promise API"></a>Promise API</h4><p><img src="http://7xtb44.com1.z0.glb.clouddn.com/promise.jpg" alt=""></p>
 <p>包含：</p>
@@ -250,7 +250,7 @@
     
     <summary type="html">
     
-      简单介绍Promise API的用法，用过感觉还是jq和async体验较好。
+      Promise的用法
     
     </summary>
     
