@@ -170,12 +170,16 @@ function drawMain(){
             return "rgb(" + parseInt(r) + ", " + parseInt(g) + ", " + parseInt(b) + ")";
         };
     })();
-    var text = new createjs.Text("If destined, you are my air, I would rather, hold breath.\n\n                         -- To Dear Sha", "bold 48px Cursive",  getColor());
+    var text = new createjs.Text("If destined, you are my air,\n\n", "bold 48px Cursive",  getColor());
+    text.textAlign = "center";
+    text.x = w / 2;
+    text.y = h / 2 - 2* text.getMeasuredLineHeight();
+    stage.addChild(text);
+    text = new createjs.Text("I would rather, hold breath.\n\n                         -- To Dear Sha", "bold 48px Cursive",  getColor());
     text.textAlign = "center";
     text.x = w / 2;
     text.y = h / 2 - text.getMeasuredLineHeight();
     stage.addChild(text);
-
 
     var textColorDir = 1;
     var textColorChange = (function (){
@@ -240,10 +244,14 @@ function drawMain(){
             stage.removeChild(text);
 
             color = getColor();
-            text = new createjs.Text("If destined, you are my air, I would rather, hold breath.\n\n                         -- To Dear Sha", "bold 48px Cursive", color);
+            text = new createjs.Text("If destined, you are my air,\n\n", "bold 48px Cursive", color);
             text.textAlign = "center";
             text.x = w / 2;
-            text.y = h / 2 - text.getMeasuredLineHeight();
+            text.y = h / 2 - 2 * text.getMeasuredLineHeight();
+            text = new createjs.Text("I would rather, hold breath.\n\n                           -- To Dear Sha", "bold 48px Cursive", color);
+            text.textAlign = "center";
+            text.x = w / 2;
+            text.y = h / 2 - * text.getMeasuredLineHeight();
             stage.addChild(text);
         }
 
