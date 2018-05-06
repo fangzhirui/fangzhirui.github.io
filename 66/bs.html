@@ -57,7 +57,7 @@ body {
     <center>
 </div>
 
-<audio width="0" height="0" autoplay="true" loop="true">
+<audio width="0" height="0" autoplay="true" loop="false">
 <source src="http://7xtb44.com1.z0.glb.clouddn.com/canon_in_c.mp3" type="audio/mpeg">
 Your browser does not support the audio element.
 </audio>
@@ -170,12 +170,13 @@ function drawMain(){
             return "rgb(" + parseInt(r) + ", " + parseInt(g) + ", " + parseInt(b) + ")";
         };
     })();
-    var text = new createjs.Text("If destined, you are my air,", "bold 48px Cursive",  getColor());
+    var color = getColor();
+    var text = new createjs.Text("If destined, you are my air,", "bold 48px Cursive",  color);
     text.textAlign = "center";
     text.x = w / 2;
     text.y = h / 2 - 3 * text.getMeasuredLineHeight();
     stage.addChild(text);
-    text = new createjs.Text("I would rather, hold breath.\n\n                         -- To Dear Sha", "bold 48px Cursive",  getColor());
+    text = new createjs.Text("I would rather, hold breath.\n\n                         -- To Dear Sha", "bold 48px Cursive",  color);
     text.textAlign = "center";
     text.x = w / 2;
     text.y = h / 2 - text.getMeasuredLineHeight();
