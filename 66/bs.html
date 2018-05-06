@@ -170,7 +170,7 @@ function drawMain(){
             return "rgb(" + parseInt(r) + ", " + parseInt(g) + ", " + parseInt(b) + ")";
         };
     })();
-    var text = new createjs.Text("Wish you would be happy every day!\n\n                             -- To Dear 66", "bold 48px Cursive", getColor());
+    var text = new createjs.Text("Wish you would be happy every day!\n\n                         -- To Dear Shasha", "bold 48px Cursive", getColor());
     text.textAlign = "center";
     text.x = w / 2;
     text.y = h / 2 - text.getMeasuredLineHeight();
@@ -240,7 +240,7 @@ function drawMain(){
             stage.removeChild(text);
 
             color = getColor();
-            text = new createjs.Text("Wish you would be happy every day!\n\n                             -- To Dear 66", "bold 48px Cursive", color);
+            text = new createjs.Text("Wish you would be happy every day!\n\n                         -- To Dear Shasha", "bold 48px Cursive", color);
             text.textAlign = "center";
             text.x = w / 2;
             text.y = h / 2 - text.getMeasuredLineHeight();
@@ -283,6 +283,10 @@ $(function(){
             if(prog < 1)
                 setTimeout(timerProg,500);
         }
+    });
+
+    myAudio.addEventListener("ended", function(){
+    	location.reload();
     });
 
     function displayProg(){
